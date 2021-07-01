@@ -46,8 +46,9 @@ public class LoginController extends HttpServlet {
 	        String phoneNo = request.getParameter("phoneNo");
 	        String city = request.getParameter("city");
 	        String dob = request.getParameter("dob");
+	        String password= request.getParameter("password");
             CustomerDao customerDao= new CustomerDao();
-	        Customer customer = new Customer(cid, firstname, lastname, phoneNo, city, dob);
+	        Customer customer = new Customer(cid, firstname, lastname, phoneNo, city, dob, password);
 	        
 	        try {
 	            customerDao.insertCustomer(customer);
@@ -56,7 +57,7 @@ public class LoginController extends HttpServlet {
 	            e.printStackTrace();
 	        }
 
-	        response.sendRedirect("employeedetails.jsp");
+	        response.sendRedirect("CustomerDetails.jsp");
 	    
 	}
 

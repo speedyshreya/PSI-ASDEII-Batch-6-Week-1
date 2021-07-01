@@ -20,7 +20,7 @@
 		<br> Enter user id <input type = 'text' name = 'userid' placeHolder = 'user id' required = 'required'/>
 		<br> Enter user password <input type = 'password' name = 'password' required = 'required'/>
 		
-		<br> <input type = 'submit' value = 'Login'>
+		<br> <input type = 'submit' value = 'Login'> <input type= 'submit' value = 'Register'>
 		
 		<input type= 'hidden' name = 'h1' value = 'Login'>  
 		

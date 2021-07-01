@@ -62,7 +62,7 @@
 				</tr>
 
 				<%
-					for (Customer customer : Customers) {
+					for (Customer customer : customers) {
 				%>
 				<tr>
 					<td><%=customer.getCid()%></td>
